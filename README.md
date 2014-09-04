@@ -1,4 +1,4 @@
 camel-blob
 ==========
 
-Camel example for producing and consumer an ActiveMQ blob message.
+Camel example for producing and consuming an ActiveMQ blob message.
