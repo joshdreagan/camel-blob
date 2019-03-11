@@ -44,7 +44,7 @@
  
   <bean id="blobMessageConverter" class="org.jboss.poc.camelblob.BlobMessageConverter"/>
  
-  <camelContext id="camel-blob-producer" trace="false" xmlns="http://camel.apache.org/schema/blueprint">
+  <camelContext id="camel-blob-consumer" trace="false" xmlns="http://camel.apache.org/schema/blueprint">
 
     <route id="jmsConsumerRoute">
       <from uri="jms:queue:{{jms.consumer.queueName}}?disableReplyTo=true&amp;messageConverter=#blobMessageConverter"/>
